@@ -35,3 +35,5 @@ const Form = () => (
             </fieldset>
         </form>
 );
+
+export default Form;
