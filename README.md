@@ -6,6 +6,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 # Demo
 Here is my demo:
+https://panijoanna.github.io/currency-converter-react/
 
 ## Available Scripts
 
