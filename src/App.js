@@ -1,11 +1,33 @@
 import Form from "./Form";
+import {useState} from "react";
 
 function App() {
-  return (
-    <div className="body__container">
-        <Form/>
-    </div>
-  );
+    const [result, setResult] = useState(0);
+    const [value, setValue] = useState(0);
+    const [currencies, setCurrencies] = useState([
+        {
+            id: 1,
+            content: "EUR",
+            rate: 4.85
+        }, 
+        {
+            id: 2,
+            content: "USD",
+            rate: 5.0
+        }, 
+        {
+            id: 3,
+            content: "GBP",
+            rate: 5.52
+        }
+    ]);
+
+
+    return (
+        <div className="body__container">
+            <Form/>
+        </div>
+    );
 }
 
 export default App;
