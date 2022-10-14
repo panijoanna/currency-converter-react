@@ -3,7 +3,7 @@ import {useState} from "react";
 
 function App() {
     const [result, setResult] = useState(0);
-    const [value, setValue] = useState(0);
+    const [amount, setAmount] = useState();
     const [currencies, setCurrencies] = useState([
         {
             id: 1,
