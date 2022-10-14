@@ -1,11 +1,12 @@
 import Form from "./Form";
-import {useState} from "react";
+import { useState } from "react";
 
 function App() {
     const [result, setResult] = useState();
-    const [fromCurrency, setFromCurrency] = useState();
-    const [toCurrency, setToCurrency] = useState();
 
+    const calculateResult = (currency, amount) => {
+
+    };
 
     return (
         <div className="body__container">
