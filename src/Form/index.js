@@ -55,7 +55,6 @@ const Form = ({ insertResult, calculateResult }) => {
                 </button>
             </fieldset>
         </form>
-    )
-};
+    );
 
 export default Form;
