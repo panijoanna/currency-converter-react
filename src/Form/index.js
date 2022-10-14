@@ -1,6 +1,9 @@
 import "./style.css";
 
 const Form = ({ insertResult, calculateResult }) => {
+    const [currency, setCurrency] = useState();
+    const [amount, setAmount] = useState("");
+}
 
     return (
         <form className="form">
