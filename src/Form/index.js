@@ -1,4 +1,5 @@
 import "./style.css";
+import { currencies } from "./currencies";
 
 const Form = ({ result, calculateResult }) => {
     const [currency, setCurrency] = useState(0);
@@ -6,6 +7,7 @@ const Form = ({ result, calculateResult }) => {
     const [result, setResult] = useState();
 
     const calculateResult = (currency, amount) => {
+        const exchangeRate = currencies.map((currency => currency))
         setResult(amount / exchangeRate);
     };
 
