@@ -7,7 +7,6 @@ const Form = ({ result, calculateResult }) => {
     const [result, setResult] = useState();
 
     const calculateResult = (currency, amount) => {
-        const exchangeRate = currencies.map((currency => currency))
         setResult(amount / exchangeRate);
     };
 
