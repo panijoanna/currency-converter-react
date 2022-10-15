@@ -7,8 +7,6 @@ function App() {
         <div className="body__container">
             <Form 
             result = {result}
-            currency = {currency}
-            amount = {amount}
             calculateResult = {calculateResult}
 
             />
