@@ -1,5 +1,6 @@
 import "./style.css";
 import { useState } from "react";
+import { currencies } from "./currencies";
 
 const Form = ({ calculateResult }) => {
     const [currency, setCurrency] = useState(0);
@@ -59,9 +60,12 @@ return (
                     value={currency}
                     onChange={({ target }) => setCurrency(target.value)}
                     >
-                    <option value="EUR">Euro</option>
-                    <option value="GBP">Funt brytyjski</option>
-                    <option value="USD">Dolar amerykański</option>
+                        <option value="EUR">Euro
+                        </option>
+                        <option value="GBP">Funt brytyjski
+                        </option>
+                        <option value="USD">Dolar amerykański
+                        </option>
                 </select>
             </label>
             <button onClick={calculateResult} 
