@@ -3,6 +3,13 @@ import { useState } from "react";
 
 function App() {
 
+    const [result, setResult] = useState();
+
+    const calculateResult = (currency, amount) => {
+        const exchangeRate = currencies.find(({ content }) => content === currency);
+        setResult(amount / exchangeRate);
+    };
+
     return (
         <div className="body__container">
             <Form 
