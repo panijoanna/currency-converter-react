@@ -57,6 +57,7 @@ return (
                 <select 
                     className="form__option"
                     value={currency}
+                    onChange={({ target }) => setCurrency(target.value)}
                     >
                     <option value="EUR">Euro</option>
                     <option value="GBP">Funt brytyjski</option>
