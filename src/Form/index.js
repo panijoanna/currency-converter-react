@@ -54,7 +54,10 @@ return (
                 * - pole obowiązkowe
             </p>
             <label>
-                <select className="form__option">
+                <select 
+                    className="form__option"
+                    value={currency}
+                    >
                     <option value="EUR">Euro</option>
                     <option value="GBP">Funt brytyjski</option>
                     <option value="USD">Dolar amerykański</option>
