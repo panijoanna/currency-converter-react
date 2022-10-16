@@ -5,12 +5,6 @@ import { currencies } from "../currencies/currencies.js";
 const Form = () => {
     const [currency, setCurrency] = useState(0);
     const [amount, setAmount] = useState("");
-    const [result, setResult] = useState();
-
-    const calculateResult = (currency, amount) => {
-        const exchangeRate = currencies.find(({ content }) => content === currency);
-        setResult(amount / exchangeRate);
-    };
 
     const onFormSubmit = (event) => {
         event.preventDefault();
