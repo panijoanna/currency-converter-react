@@ -12,13 +12,9 @@ const Form = () => {
         setResult(amount / exchangeRate);
     };
 
-    const insertResult = () => {
-        let result = calculateResult(currency, amount);
-    };
-
     const onFormSubmit = (event) => {
         event.preventDefault();
-        insertResult();
+        calculateResult(currency, amount);
     };
 
 return (
@@ -70,7 +66,7 @@ return (
                     <option value="USD">Dolar amerykański</option>
                 </select>
             </label>
-            <button onClick={insertResult} 
+            <button onClick={calculateResult} 
                     className="form__button">
                     Przelicz walutę
             </button>
