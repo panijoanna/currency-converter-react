@@ -31,6 +31,7 @@ return (
                         min="1"
                         max="1000000000"
                         onChange={({ target }) => setAmount(target.value)}
+                        value={amount}
                         />
                 </label>
             </p>
