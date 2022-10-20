@@ -1,4 +1,4 @@
-#📁 Currency converter/React 💵
+# 📁 Currency converter/React 💵
 
 # ✅ Introduction
 In this project, I created a currency-converter.
