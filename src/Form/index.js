@@ -14,7 +14,7 @@ const Form = ({ calculateResult }) => {
 return (
     <form 
         className="form" 
-        onFormSubmit={onFormSubmit}
+        onSubmit={onFormSubmit}
         >
         <fieldset className="form__fieldset">
             <legend className="form__legend">Kalkulator walut</legend>
@@ -70,8 +70,7 @@ return (
                         ))};
                 </select>
             </label>
-            <button onClick={calculateResult} 
-                    className="form__button">
+            <button className="form__button">
                     Przelicz walutę
             </button>
         </fieldset>
