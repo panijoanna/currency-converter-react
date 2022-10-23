@@ -3,7 +3,7 @@ import { useState } from "react";
 import { currencies } from "../currencies/currencies";
 
 const Form = ({ calculateResult }) => {
-    const [currency, setCurrency] = useState(0);
+    const [currency, setCurrency] = useState("");
     const [amount, setAmount] = useState("");
 
     const onFormSubmit = (event) => {
@@ -43,7 +43,7 @@ return (
                     </span>
                     <input
                         className="form__field"
-                        readonly
+                        readOnly
                         type="number"
                         name="wynik"
                         step="0.01"
