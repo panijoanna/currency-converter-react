@@ -31,8 +31,8 @@ return (
                         step="0.01"
                         min="1"
                         max="1000000000"
-                        onChange={({ target }) => setAmount(target.value)}
                         value={amount}
+                        onChange={({ target }) => setAmount(target.value)}
                         />
                 </label>
             </p>

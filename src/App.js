@@ -6,7 +6,7 @@ function App() {
 
     const [result, setResult] = useState();
 
-    const calculateResult = (currency, amount) => {
+    const calculateResult = (amount, currency) => {
         const rate = currencies.find((el => el.content === currency));
     
         setResult({
