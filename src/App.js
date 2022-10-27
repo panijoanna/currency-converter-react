@@ -10,7 +10,7 @@ function App() {
         const exchangeRate = currencies.find((el => el.content === currency));
         const rate = exchangeRate.rate;
 
-        setResult(() => amount / rate);
+        setResult(() => (amount / rate).toFixed(2));
             };
 
     return (
