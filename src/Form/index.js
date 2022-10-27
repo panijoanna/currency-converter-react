@@ -48,7 +48,9 @@ return (
                         name="wynik"
                         step="0.01"
                         min="1"
-                        max="1000000000"/>
+                        max="1000000000"
+                        value={result}
+                        />
                 </label>
             </p>
             <p className="form__paragraph">
