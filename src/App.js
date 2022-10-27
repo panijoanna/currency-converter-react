@@ -4,9 +4,9 @@ import { currencies } from "./currencies/currencies";
 
 function App() {
 
-    const [result, setResult] = useState();
+    const [result, setResult] = useState(0);
 
-    const calculateResult = (amount, currency) => {
+    const calculateResult = (currency, amount) => {
         const exchangeRate = currencies.find((el => el.content === currency));
         const rate = exchangeRate.rate;
 
