@@ -9,11 +9,9 @@ function App() {
     const calculateResult = (amount, currency) => {
         const exchangeRate = currencies.find((el => el.content === currency));
         const rate = exchangeRate.rate;
-        setResult({
-            total: amount / rate,
-            currency
-        }
-        )};
+
+        setResult(() => amount / rate);
+            };
 
     return (
         <div className="body__container">
