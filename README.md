@@ -19,6 +19,13 @@ https://panijoanna.github.io/currency-converter-react/
 
 In the project directory, you can run:
 
+** ✅ Instruction
+Open the demo
+Enter the value in the input: Kwota w zł
+Choose your currency
+Click the button: Przelicz walutę
+Your result will be shown in the input: Wynik
+
 ### `npm start`
 
 Runs the app in the development mode.\
