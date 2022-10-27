@@ -19,7 +19,7 @@ https://panijoanna.github.io/currency-converter-react/
 
 In the project directory, you can run:
 
-✅ Instruction
+## ✅ Instruction
 1. Open the demo
 2. Enter the value in the input: Kwota w zł
 3. Choose your currency
