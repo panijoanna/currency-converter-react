@@ -16,8 +16,8 @@ function App() {
     return (
         <div className="body__container">
             <Form 
-            result = {result}
-            calculateResult = {calculateResult}
+            result={result}
+            calculateResult={calculateResult}
             />
         </div>
     );
