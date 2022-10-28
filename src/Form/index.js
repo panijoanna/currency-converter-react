@@ -44,11 +44,6 @@ return (
                     <input
                         className="form__field"
                         readOnly
-                        type="number"
-                        name="wynik"
-                        step="0.01"
-                        min="1"
-                        max="1000000000"
                         value={result}
                         />
                 </label>
