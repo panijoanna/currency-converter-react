@@ -15,4 +15,17 @@ const Clock = () => {
             clearInterval(interval);
         }
     }, []);
+
+    return (
+        <div>
+            <p>
+                {" "}
+                {dateItem.toLocaleTimeString(undefined, {
+                    weekday: "long",
+                    day: "numeric",
+                    month: "long",
+                })}
+            </p>
+        </div>
+    );
 };
