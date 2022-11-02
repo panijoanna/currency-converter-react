@@ -10,5 +10,9 @@ const Clock = () => {
 
     useEffect(() => {
         const interval = setInterval(changeDate, 1000);
-    });
+
+        return () => {
+            clearInterval(interval);
+        }
+    }, []);
 };
