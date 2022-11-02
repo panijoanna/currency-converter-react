@@ -7,4 +7,8 @@ const Clock = () => {
     const changeDate = () => {
         setDateItem(new Date());
     };
+
+    useEffect(() => {
+        const interval = setInterval(changeDate, 1000);
+    });
 };
