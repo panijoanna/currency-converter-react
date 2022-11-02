@@ -19,6 +19,7 @@ const Clock = () => {
     return (
         <div>
             <p>
+                Dzisiaj jest
                 {" "}
                 {dateItem.toLocaleTimeString(undefined, {
                     weekday: "long",
@@ -29,3 +30,5 @@ const Clock = () => {
         </div>
     );
 };
+
+export default Clock;
