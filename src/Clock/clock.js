@@ -17,8 +17,9 @@ const Clock = () => {
   }, []);
 
   return (
-    <div>
-        Dzisiaj jest{" "}
+    <div className="clock">
+        Dzisiaj jest
+        {" "}
         {dateItem.toLocaleTimeString(undefined, {
           weekday: "long",
           day: "numeric",
