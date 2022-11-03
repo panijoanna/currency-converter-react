@@ -18,14 +18,12 @@ const Clock = () => {
 
   return (
     <div>
-      <p>
         Dzisiaj jest{" "}
         {dateItem.toLocaleTimeString(undefined, {
           weekday: "long",
           day: "numeric",
           month: "long",
         })}
-      </p>
     </div>
   );
 };
