@@ -2,10 +2,10 @@ import { useState, useEffect } from "react";
 import "./style.css";
 
 const Clock = () => {
-  const [dateItem, setDateItem] = useState(new Date());
+  const [date, setdate] = useState(new Date());
 
   const changeDate = () => {
-    setDateItem(new Date());
+    setdate(new Date());
   };
 
   useEffect(() => {
@@ -20,7 +20,7 @@ const Clock = () => {
     <div className="clock">
         Dzisiaj jest
         {" "}
-        {dateItem.toLocaleTimeString(undefined, {
+        {date.toLocaleTimeString(undefined, {
           weekday: "long",
           day: "numeric",
           month: "long",
