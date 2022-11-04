@@ -7,7 +7,6 @@ const formattedDate = (date) => date.toLocaleTimeString(undefined, {
   month: "long",
 });
 
-
 const Clock = () => {
   const [date, setDate] = useState(new Date());
 
