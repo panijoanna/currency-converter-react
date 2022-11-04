@@ -4,10 +4,6 @@ import "./style.css";
 const Clock = () => {
   const [date, setdate] = useState(new Date());
 
-  const changeDate = () => {
-    setdate(new Date());
-  };
-
   useEffect(() => {
     const interval = setInterval(changeDate, 1000);
 
