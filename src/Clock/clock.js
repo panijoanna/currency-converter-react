@@ -25,6 +25,7 @@ const Clock = () => {
     <div className="clock">
         Dzisiaj jest
         {" "}
+        {formattedDate(date)}
     </div>
   );
 };
