@@ -40,3 +40,12 @@ export const FormButton = styled.button`
     background-color: #f9f871;
   }
 `;
+
+export const LabelText = styled.span`
+  width: 100%;
+  font-weight: 500;
+  max-width: 100px;
+  display: inline-block;
+  margin-right: 5px;
+  color: #f6ebff;
+`;
