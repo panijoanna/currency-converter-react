@@ -1,4 +1,13 @@
-import { StyledForm, FormFieldset, FormLegend, FormButton, LabelText, Input, Paragraph, Select } from "./styled";
+import {
+  StyledForm,
+  FormFieldset,
+  FormLegend,
+  FormButton,
+  LabelText,
+  Input,
+  Paragraph,
+  Select,
+} from "./styled";
 import { useState } from "react";
 import Clock from "../Clock/clock.js";
 import { currencies } from "../currencies/currencies";
@@ -13,18 +22,13 @@ const Form = ({ calculateResult, result }) => {
   };
 
   return (
-    <StyledForm
-      onSubmit={onFormSubmit}>
+    <StyledForm onSubmit={onFormSubmit}>
       <FormFieldset>
-      <Clock />
-        <FormLegend >
-            Kalkulator walut
-        </FormLegend>
+        <Clock />
+        <FormLegend>Kalkulator walut</FormLegend>
         <p>
           <label>
-            <LabelText>
-                Kwota w zł*:
-            </LabelText>
+            <LabelText>Kwota w zł*:</LabelText>
             <Input
               required
               type="number"
@@ -39,16 +43,13 @@ const Form = ({ calculateResult, result }) => {
         </p>
         <p>
           <label>
-            <LabelText>
-                Wynik:
-              </LabelText>
+            <LabelText>Wynik:</LabelText>
             <Input 
-              readOnly value={result} />
+              readOnly 
+              value={result} />
           </label>
         </p>
-        <Paragraph >
-            * - pole obowiązkowe
-        </Paragraph>
+        <Paragraph>* - pole obowiązkowe</Paragraph>
         <label>
           <Select
             value={currency}
@@ -62,9 +63,7 @@ const Form = ({ calculateResult, result }) => {
             ;
           </Select>
         </label>
-        <FormButton>
-            Przelicz walutę
-        </FormButton>
+        <FormButton>Przelicz walutę</FormButton>
       </FormFieldset>
     </StyledForm>
   );
