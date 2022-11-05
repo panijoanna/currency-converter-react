@@ -58,3 +58,17 @@ export const Input = styled.input`
   border-radius: 5px;
   color: #4b4b4d;
 `;
+
+export const Paragraph = styled.p`
+  color: #faf5f5;
+  font-size: 13px;
+  padding: 5px;
+`;
+
+export const Select = styled.select`
+  padding: 5px;
+  width: 100%;
+  margin: 5px 0;
+  border-radius: 5px;
+  color: #808080;
+`;
