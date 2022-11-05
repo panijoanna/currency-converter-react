@@ -1,4 +1,4 @@
-import { StyledForm, FormFieldset } from "./styled";
+import { StyledForm, FormFieldset, FormLegend, FormButton, LabelText, Input, Paragraph, Select } from "./styled";
 import { useState } from "react";
 import Clock from "../Clock/clock.js";
 import { currencies } from "../currencies/currencies";
@@ -17,12 +17,15 @@ const Form = ({ calculateResult, result }) => {
       onSubmit={onFormSubmit}>
       <FormFieldset>
       <Clock />
-        <legend className="form__legend">Kalkulator walut</legend>
+        <FormLegend >
+            Kalkulator walut
+        </FormLegend>
         <p>
           <label>
-            <span className="form__labelText">Kwota w zł*:</span>
-            <input
-              className="form__field"
+            <LabelText>
+                Kwota w zł*:
+            </LabelText>
+            <Input
               required
               type="number"
               name="kwota"
@@ -36,14 +39,18 @@ const Form = ({ calculateResult, result }) => {
         </p>
         <p>
           <label>
-            <span className="form__labelText">Wynik:</span>
-            <input className="form__field" readOnly value={result} />
+            <LabelText>
+                Wynik:
+              </LabelText>
+            <Input 
+              readOnly value={result} />
           </label>
         </p>
-        <p className="form__paragraph">* - pole obowiązkowe</p>
+        <Paragraph >
+            * - pole obowiązkowe
+        </Paragraph>
         <label>
-          <select
-            className="form__option"
+          <Select
             value={currency}
             onChange={({ target }) => setCurrency(target.value)}
           >
@@ -53,9 +60,11 @@ const Form = ({ calculateResult, result }) => {
               </option>
             ))}
             ;
-          </select>
+          </Select>
         </label>
-        <button className="form__button">Przelicz walutę</button>
+        <FormButton>
+            Przelicz walutę
+        </FormButton>
       </FormFieldset>
     </StyledForm>
   );
