@@ -49,3 +49,12 @@ export const LabelText = styled.span`
   margin-right: 5px;
   color: #f6ebff;
 `;
+
+export const Input = styled.input`
+  border: 1px solid #f6ebff;
+  padding: 10px;
+  max-width: 400px;
+  width: 100%;
+  border-radius: 5px;
+  color: #4b4b4d;
+`;
