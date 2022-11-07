@@ -18,15 +18,15 @@ export const FormLegend = styled.legend`
   font-size: 18px;
   border-radius: 5px;
   padding: 10px;
-  color: #f6ebff;
+  color: ${({ theme }) => theme.color.chalk};
   text-shadow: 2px 2px 0px #4b4b4d;
 `;
 
 export const FormButton = styled.button`
   border: none;
   font-weight: 500;
-  background-color: #f1f8f8;
-  color: #808080;
+  background-color: ${({ theme }) => theme.color.catskill};
+  color: ${({ theme }) => theme.color.gray};
   border-radius: 5px;
   padding: 10px;
   margin-top: 10px;
@@ -47,7 +47,7 @@ export const LabelText = styled.span`
   max-width: 100px;
   display: inline-block;
   margin-right: 5px;
-  color: #f6ebff;
+  color: ${({ theme }) => theme.color.chalk};
 `;
 
 export const Input = styled.input`
@@ -56,11 +56,11 @@ export const Input = styled.input`
   max-width: 400px;
   width: 100%;
   border-radius: 5px;
-  color: #4b4b4d;
+  color: ${({ theme }) => theme.color.abbey};
 `;
 
 export const Paragraph = styled.p`
-  color: #faf5f5;
+  color: ${({ theme }) => theme.color.peach};
   font-size: 13px;
   padding: 5px;
 `;
@@ -70,5 +70,5 @@ export const Select = styled.select`
   width: 100%;
   margin: 5px 0;
   border-radius: 5px;
-  color: #808080;
+  color: ${({ theme }) => theme.color.gray};
 `;
