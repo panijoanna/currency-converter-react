@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { StyledClock } from "./styled";
+import { useCurrentDate } from "./useCurrentDate";
 
 const formattedDate = (date) => date.toLocaleTimeString(undefined, {
   weekday: "long",
