@@ -7,7 +7,7 @@ export const StyledForm = styled.form`
 
 export const FormFieldset = styled.fieldset`
   border: 2px solid ${({ theme }) => theme.color.catskill};
-  padding: 30px 80px 80px 80px;
+  padding: 10px 40px 40px 40px;
   border-radius: 5px;
   max-width: 800px;
   margin: auto;
