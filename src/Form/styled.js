@@ -6,7 +6,7 @@ export const StyledForm = styled.form`
 `;
 
 export const FormFieldset = styled.fieldset`
-  border: 2px solid #f1f8f8;
+  border: 2px solid ${({ theme }) => theme.color.catskill};
   padding: 30px 80px 80px 80px;
   border-radius: 5px;
   max-width: 800px;
@@ -19,7 +19,7 @@ export const FormLegend = styled.legend`
   border-radius: 5px;
   padding: 10px;
   color: ${({ theme }) => theme.color.chalk};
-  text-shadow: 2px 2px 0px #4b4b4d;
+  text-shadow: 2px 2px 0px ${({ theme }) => theme.color.abbey};
 `;
 
 export const FormButton = styled.button`
@@ -51,7 +51,7 @@ export const LabelText = styled.span`
 `;
 
 export const Input = styled.input`
-  border: 1px solid #f6ebff;
+  border: 1px solid ${({ theme }) => theme.color.chalk};
   padding: 10px;
   max-width: 400px;
   width: 100%;
