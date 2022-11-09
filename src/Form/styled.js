@@ -61,7 +61,7 @@ export const Input = styled.input`
 
 export const Paragraph = styled.p`
   color: ${({ theme }) => theme.color.peach};
-  font-size: 13px;
+  font-size: 15px;
   padding: 5px;
 `;
 
