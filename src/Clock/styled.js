@@ -6,5 +6,5 @@ export const StyledClock = styled.div`
   padding: 0 20px 20px;
   font-family: "Space Mono", monospace;
   color: ${({ theme }) => theme.color.chalk};
-  font-size: 12px;
+  font-size: 13px;
 `;
