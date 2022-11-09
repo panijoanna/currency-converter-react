@@ -11,6 +11,10 @@ export const FormFieldset = styled.fieldset`
   border-radius: 5px;
   max-width: 800px;
   margin: auto;
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.mobileDevice}px) {
+    padding: 15px;
+  }
 `;
 
 export const FormLegend = styled.legend`
