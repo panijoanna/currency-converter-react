@@ -33,11 +33,11 @@ export const FormButton = styled.button`
   width: 100%;
 
   &:hover {
-    background-color: #d1e2e2;
+    filter: brightness(110%);
   }
 
   &:active {
-    background-color: #f9f871;
+    filter: brightness(90%);
   }
 `;
 
