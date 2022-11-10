@@ -35,6 +35,7 @@ export const FormButton = styled.button`
   padding: 10px;
   margin-top: 10px;
   width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 
   &:hover {
     filter: brightness(110%);
