@@ -11,8 +11,8 @@ https://panijoanna.github.io/currency-converter-react/
 ## ✅ Technologies 🛠
 1. HTML
 2. CSS
-3. Javascript/ES6
-4. React
+3. Javascript/ES6 (map, find, convert a string to a number : unary plus operator)
+4. React (useState, useEffect, custom hooks, localStorage, functional components, styled components, npm, webpack, toLocaleTimeString, events, date, destructuring)
 5. GIT
 
 ## ✅ Instruction
