@@ -5,3 +5,5 @@ const Error = () => {
     Coś poszło nie tak. Sprawdź połączenie z internetem.
 </StyledError>
 };
+
+export default Error;
