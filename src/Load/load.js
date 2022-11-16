@@ -5,3 +5,5 @@ const Load = () => {
     Trwa ładowanie...
 </StyledLoad>
 };
+
+export default Load;
