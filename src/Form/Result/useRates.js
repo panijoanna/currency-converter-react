@@ -12,6 +12,14 @@ useEffect(() => {
         try {
             const response = await axios.get(src);
             const { rates, date } = response.data;
+
+            setRates({
+                rates,
+                date,
+                status: "success",
+            });
+
+            
         }
     }
 });
