@@ -24,5 +24,7 @@ useEffect(() => {
             });
         }  
         };
-    }
-});
+        setTimeout(getData, 2000);
+    }, []);
+
+};
