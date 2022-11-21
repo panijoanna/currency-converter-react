@@ -6,3 +6,7 @@ export const useRates = () => {
 
 const baseURL = "https://api.exchangerate.host/latest?base=PLN";
 };
+
+useEffect(() => {
+
+});
