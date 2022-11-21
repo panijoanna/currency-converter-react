@@ -11,6 +11,7 @@ useEffect(() => {
     const getData = async () => {
         try {
             const response = await axios.get(src);
+            const { rates, date } = response.data;
         }
     }
 });
