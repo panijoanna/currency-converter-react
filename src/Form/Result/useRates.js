@@ -18,8 +18,11 @@ useEffect(() => {
                 date,
                 status: "success",
             });
-
-            
-        }
+        } catch (error) {
+            setRates({
+                state: "error",
+            });
+        }  
+        };
     }
 });
