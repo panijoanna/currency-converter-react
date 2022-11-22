@@ -2,7 +2,7 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 
 export const useRates = () => {
-    const [rates, setRates] = useState({ state: "loading" });
+    const [ratesData, setRatesData] = useState({ state: "loading" });
 
 const baseURL = "https://api.exchangerate.host/latest?base=PLN";
 
@@ -12,13 +12,13 @@ useEffect(() => {
             const response = await axios.get(baseURL);
             const { rates, date } = response.data;
 
-            setRates({
+            setRatesData({
                 rates,
                 date,
                 status: "success",
             });
         } catch (error) {
-            setRates({
+            setRatesData({
                 state: "error",
             });
         }  
@@ -26,5 +26,5 @@ useEffect(() => {
         setTimeout(getData, 2000);
     }, []);
 
-    return rates;
+    return ratesData;
 };
