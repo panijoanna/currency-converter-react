@@ -14,5 +14,10 @@ color: ${({ theme }) => theme.color.copper};
 `;
 
 export const StyledContainer = styled.div`
-
+width: 100%;
+padding: 5px;
+background-color: ${({ theme }) => theme.color.yellow};
+border: solid;
+border-color: ${({ theme }) => theme.color.copper};
+opacity: 0.8;
 `;
