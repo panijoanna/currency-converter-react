@@ -27,6 +27,12 @@ const Form = ({ calculateResult, result }) => {
 
   const [result, setResult] = useState(0);
 
+  const calculateResult = (currency, amount) => {
+    const rate = ratesData.rates[currency];
+
+    setResult((+amount / rate).toFixed(2));
+  };
+
   return (
     <StyledForm onSubmit={onFormSubmit}>
       <FormFieldset>
