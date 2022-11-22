@@ -14,7 +14,7 @@ import { currencies } from "../currencies/currencies";
 import { useRates } from "../Result/useRates.js";
 import { Error, Loading, StyledContainer } from "../Result/styled";
 
-const Form = ({ calculateResult, result }) => {
+const Form = () => {
   const onFormSubmit = (event) => {
     event.preventDefault();
     calculateResult(currency, amount);
@@ -34,10 +34,26 @@ const Form = ({ calculateResult, result }) => {
   };
 
   return (
-    <StyledForm onSubmit={onFormSubmit}>
+    <StyledForm 
+      onSubmit={onFormSubmit}
+    >
       <FormFieldset>
-        <Clock />
-        <FormLegend>Kalkulator walut</FormLegend>
+      <Clock />
+      <FormLegend>
+        Kalkulator walut
+        </FormLegend>
+        {ratesData.state === "loading" ? (
+          <Loading>
+            Trwa ładowanie, proszę czekać...
+          </Loading>
+        ) : (ratesData.state === "error" ? (
+          <StyledContainer>
+            <Error>
+              Wystąpił błąd, sprawdź połączenie z internetem lub spróbuj ponownie.
+            </Error>
+          </StyledContainer>
+        ) : (
+          <>
         <p>
           <label>
             <LabelText>Kwota w zł*:</LabelText>
@@ -75,7 +91,12 @@ const Form = ({ calculateResult, result }) => {
             ;
           </Select>
         </label>
-        <FormButton>Przelicz walutę</FormButton>
+        <FormButton>
+          Przelicz walutę
+        </FormButton>
+        </>
+        ))
+            }
       </FormFieldset>
     </StyledForm>
   );
