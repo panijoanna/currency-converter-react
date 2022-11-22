@@ -25,6 +25,8 @@ const Form = ({ calculateResult, result }) => {
 
   const ratesData = useRates();
 
+  const [result, setResult] = useState(0);
+
   return (
     <StyledForm onSubmit={onFormSubmit}>
       <FormFieldset>
