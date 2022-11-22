@@ -7,5 +7,5 @@ color: ${({ theme }) => theme.color.casablanca};
 `;
 
 export const Error = styled.p`
-color: ${({ theme }) => theme.color.red};
+color: ${({ theme }) => theme.color.copper};
 `;
