@@ -3,14 +3,9 @@ import { useState } from "react";
 import { currencies } from "./currencies/currencies";
 
 function App() {
-  
 
   return (
-    <>
-      <Form 
-        result={result} 
-        calculateResult={calculateResult} />
-    </>
+   <Result/>
   );
 }
 
