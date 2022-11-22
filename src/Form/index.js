@@ -35,68 +35,71 @@ const Form = () => {
 
   return (
     <StyledForm 
-      onSubmit={onFormSubmit}
-    >
+      onSubmit={onFormSubmit}>
       <FormFieldset>
-      <Clock />
-      <FormLegend>
-        Kalkulator walut
+        <Clock />
+        <FormLegend>
+          Kalkulator walut
         </FormLegend>
         {ratesData.state === "loading" ? (
           <Loading>
             Trwa ładowanie, proszę czekać...
           </Loading>
-        ) : (ratesData.state === "error" ? (
+        ) : ratesData.state === "error" ? (
           <StyledContainer>
             <Error>
-              Wystąpił błąd, sprawdź połączenie z internetem lub spróbuj ponownie.
+              Wystąpił błąd, sprawdź połączenie z internetem lub spróbuj
+              ponownie.
             </Error>
           </StyledContainer>
         ) : (
           <>
-        <p>
-          <label>
-            <LabelText>Kwota w zł*:</LabelText>
-            <Input
-              required
-              type="number"
-              name="kwota"
-              step="0.01"
-              min="1"
-              max="1000000000"
-              value={amount}
-              onChange={({ target }) => setAmount(target.value)}
-            />
-          </label>
-        </p>
-        <p>
-          <label>
-            <LabelText>Wynik:</LabelText>
-            <Input 
-              readOnly 
-              value={result} />
-          </label>
-        </p>
-        <Paragraph>* - pole obowiązkowe</Paragraph>
-        <label>
-          <Select
-            value={currency}
-            onChange={({ target }) => setCurrency(target.value)}
-          >
-            {currencies.map((currency) => (
-              <option key={currency.content} value={currency.content}>
-                {currency.name}
-              </option>
-            ))}
-            ;
-          </Select>
-        </label>
-        <FormButton>
-          Przelicz walutę
-        </FormButton>
-        </>
-        ))
-            }
+            <p>
+              <label>
+                <LabelText>Kwota w zł*:</LabelText>
+                <Input
+                  required
+                  type="number"
+                  name="kwota"
+                  step="0.01"
+                  min="1"
+                  max="1000000000"
+                  value={amount}
+                  onChange={({ target }) => setAmount(target.value)}
+                />
+              </label>
+            </p>
+            <p>
+              <label>
+                <LabelText>
+                  Wynik:
+                </LabelText>
+                <Input 
+                  readOnly 
+                  value={result} />
+              </label>
+            </p>
+            <Paragraph>
+              * - pole obowiązkowe
+            </Paragraph>
+            <label>
+              <Select
+                value={currency}
+                onChange={({ target }) => setCurrency(target.value)}
+              >
+                {currencies.map((currency) => (
+                  <option key={currency.content} value={currency.content}>
+                    {currency.name}
+                  </option>
+                ))}
+                ;
+              </Select>
+            </label>
+            <FormButton>
+              Przelicz walutę
+            </FormButton>
+          </>
+        )}
       </FormFieldset>
     </StyledForm>
   );
