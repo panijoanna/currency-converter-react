@@ -12,6 +12,7 @@ import { useState } from "react";
 import Clock from "../Clock/clock.js";
 import { currencies } from "../currencies/currencies";
 import { useRates } from "../Result/useRates.js";
+import { Error, Loading, StyledContainer } from "../Result/styled";
 
 const Form = ({ calculateResult, result }) => {
   const [currency, setCurrency] = useState(currencies[0].content);
