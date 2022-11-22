@@ -15,13 +15,15 @@ import { useRates } from "../Result/useRates.js";
 import { Error, Loading, StyledContainer } from "../Result/styled";
 
 const Form = ({ calculateResult, result }) => {
-  const [currency, setCurrency] = useState(currencies[0].content);
-  const [amount, setAmount] = useState("");
-
   const onFormSubmit = (event) => {
     event.preventDefault();
     calculateResult(currency, amount);
   };
+
+  const [currency, setCurrency] = useState(currencies[0].content);
+  const [amount, setAmount] = useState("");
+
+  const ratesData = useRates();
 
   return (
     <StyledForm onSubmit={onFormSubmit}>
