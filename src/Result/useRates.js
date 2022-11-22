@@ -8,25 +8,29 @@ export const useRates = () => {
   useEffect(() => {
     const getData = async () => {
       try {
-        const response = await fetch("https://api.exchangerate.host/latest?base=PLN");
+        const response = await fetch(
+          "https://api.exchangerate.host/latest?base=PLN"
+        );
 
         if (!response.ok) {
-            throw new Error(response.statusText);
+          throw new Error(response.statusText);
         }
 
         const { rates, date } = await response.json();
 
         setRatesData({
+          state: "success",
           rates,
           date,
-          status: "success",
         });
+        
       } catch (error) {
         setRatesData({
           state: "error",
         });
       }
     };
+
     setTimeout(getData, 2000);
   }, []);
 
