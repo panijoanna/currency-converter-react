@@ -7,5 +7,6 @@ color: ${({ theme }) => theme.color.casablanca};
 `;
 
 export const Error = styled.p`
+font-size: 18px;
 color: ${({ theme }) => theme.color.copper};
 `;
