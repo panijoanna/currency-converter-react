@@ -23,7 +23,7 @@ export const useRates = () => {
           rates,
           date,
         });
-        
+
       } catch (error) {
         setRatesData({
           state: "error",
@@ -31,7 +31,7 @@ export const useRates = () => {
       }
     };
 
-    setTimeout(getData, 2000);
+    setTimeout(getData, 1000);
   }, []);
 
   return ratesData;
