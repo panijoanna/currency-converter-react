@@ -8,3 +8,5 @@ const Result = ({ result, calculateResult }) => {
         />
     )
 };
+
+export default Result;
