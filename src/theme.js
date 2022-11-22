@@ -6,6 +6,9 @@ export const theme = {
         abbey: "#4b4b4d",
         peach: "#faf5f5",
         red: "#F14C4C",
+        yellow: "#FBEFB3",
+        copper: "#B38031",
+        casablanca: "#FCBA4C",
     },
     breakpoint: {
         mobileDevice: 767,
