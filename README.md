@@ -1,7 +1,7 @@
 # 📁 Currency converter/React 💵
 
 # ✅ Introduction
-In this project, I created a currency-converter.
+In this project, I created a currency-converter. Currencies are downloaded from the open API.
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 # ✅ Demo
