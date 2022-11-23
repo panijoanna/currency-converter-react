@@ -89,9 +89,9 @@ const Form = () => {
               >
                 {Object.keys(ratesData.rates).map((currency) => (
                   <option 
-                    key={currency.content} 
-                    value={currency.content}>
-                    {currency.name}
+                    key={currency} 
+                    value={currency}>
+                    {currency}
                   </option>
                 ))}
                 ;
