@@ -16,8 +16,7 @@ https://panijoanna.github.io/currency-converter-react/
 5. GIT
 
 ## ✅ Instruction
-![calc](https://user-images.githubusercontent.com/105354955/202870077-64dce834-809a-42b2-a27f-7eb34b485613.gif)
-
+![kalkulator](https://user-images.githubusercontent.com/105354955/203505329-cba66d89-990b-432c-b3a0-e474effd31c2.gif)
 
 ## ✅ Available Scripts
 
