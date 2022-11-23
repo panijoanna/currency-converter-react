@@ -23,5 +23,8 @@ export const StyledContainer = styled.div`
 `;
 
 export const Info = styled.p`
-
+color: ${({ theme }) => theme.color.chalk};
+text-shadow: 2px 2px ${({ theme }) => theme.color.gray};
+font-size: 15px;
+text-align: center;
 `;
