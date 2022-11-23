@@ -12,7 +12,7 @@ import { useState } from "react";
 import Clock from "../Clock/clock.js";
 import { currencies } from "../currencies/currencies";
 import { useRates } from "../Result/useRates.js";
-import { Error, Loading, StyledContainer } from "../Result/styled";
+import { Error, Loading, StyledContainer, Info } from "../Result/styled";
 
 const Form = () => {
   const onFormSubmit = (event) => {
