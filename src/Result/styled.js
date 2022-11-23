@@ -21,3 +21,7 @@ export const StyledContainer = styled.div`
   border-color: ${({ theme }) => theme.color.copper};
   opacity: 0.8;
 `;
+
+export const Info = styled.p`
+
+`;
