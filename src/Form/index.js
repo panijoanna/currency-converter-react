@@ -100,6 +100,9 @@ const Form = () => {
             <FormButton>
               Przelicz walutę
             </FormButton>
+            <Info>
+              Kursy walut są aktualne na dzień {ratesData.date}
+            </Info>
           </>
         )}
       </FormFieldset>
