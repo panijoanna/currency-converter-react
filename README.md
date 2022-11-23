@@ -12,7 +12,7 @@ https://panijoanna.github.io/currency-converter-react/
 1. HTML
 2. CSS
 3. Javascript/ES6 (map, find, convert a string to a number : unary plus operator)
-4. React (useState, useEffect, custom hooks, localStorage, functional components, styled components, npm, webpack, toLocaleTimeString, events, date, destructuring)
+4. React (useState, useEffect, custom hooks, localStorage, functional components, styled components, npm, webpack, toLocaleTimeString, events, date, destructuring, fetch, currencies are downloaded from the open API)
 5. GIT
 
 ## ✅ Instruction
