@@ -1,8 +1,11 @@
-import Result from "./Result";
+import Form from "./Form";
 
-function App() {
+function App({ result, calculateResult }) {
   return (
-    <Result />
+    <Form 
+        result={result} 
+        calculateResult={calculateResult} 
+    />
   );
 }
 
