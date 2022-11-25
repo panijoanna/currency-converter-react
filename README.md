@@ -9,10 +9,10 @@ Here is my demo:
 https://panijoanna.github.io/currency-converter-react/
 
 ## ✅ Technologies 🛠
-1. HTML
-2. CSS
-3. Javascript/ES6 (map, find, convert a string to a number : unary plus operator)
-4. React (useState, useEffect, custom hooks, localStorage, functional components, styled components, npm, webpack, toLocaleTimeString, events, date, destructuring, fetch, currencies are downloaded from the open API)
+1. Accessible & semantic HTML, Markdown
+2. CSS (BEM convention, Flexbox, Grid)
+3. Javascript/ES6 + features (immutability, map, find, convert a string to a number : unary plus operator)
+4. React (hooks: useState, useEffect, custom hooks, localStorage, functional components, styled components, npm, webpack, toLocaleTimeString, events, date, destructuring, fetch, currencies are downloaded from the open API, styled components, error handling, promises, async/await)
 5. GIT
 
 ## ✅ Instruction
