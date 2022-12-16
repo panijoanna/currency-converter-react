@@ -13,7 +13,7 @@ https://panijoanna.github.io/currency-converter-react/
 2. CSS (BEM convention, Flexbox, Grid)
 3. Javascript/ES6 + features (immutability, map, find, convert a string to a number : unary plus operator)
 4. React (hooks: useState, useEffect, custom hooks, localStorage, functional components, styled components, npm, webpack, toLocaleTimeString, events, date, destructuring, fetch, currencies are downloaded from the open API, styled components, error handling, promises, async/await)
-5. GIT
+5. GIT (basic Git version control system commands)
 
 ## ✅ Instruction
 ![calc](https://user-images.githubusercontent.com/105354955/203505699-9d1286b9-6df5-4344-b8cf-2535220ace11.gif)
