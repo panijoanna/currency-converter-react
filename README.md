@@ -1,24 +1,26 @@
-# 📁 Currency converter/React 💵
+## 📁 Currency converter | React 
 
-# ✅ Introduction
+## ✅ Description
 In this project, I created a currency-converter. Currencies are downloaded from the open API.
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-# ✅ Demo
+## ✅ Demo
 Here is my demo:
 https://panijoanna.github.io/currency-converter-react/
 
-## ✅ Technologies 🛠
+## 🛠 Tech stack: 
+[![My Skills](https://skillicons.dev/icons?i=js,react,html,css,git,github)](https://skillicons.dev)
+> More details about tech:
 1. Accessible & semantic HTML, Markdown
 2. CSS (BEM convention, Flexbox, Grid)
 3. Javascript/ES6 + features (immutability, map, find, convert a string to a number : unary plus operator)
 4. React (hooks: useState, useEffect, custom hooks, localStorage, functional components, styled components, npm, webpack, toLocaleTimeString, events, date, destructuring, fetch, currencies are downloaded from the open API, styled components, error handling, promises, async/await)
 5. GIT (basic Git version control system commands)
 
-## ✅ Instruction
+## ✅ Preview
 ![calc](https://user-images.githubusercontent.com/105354955/203505699-9d1286b9-6df5-4344-b8cf-2535220ace11.gif)
 
-## ✅ Available Scripts
+## Available Scripts
 
 In the project directory, you can run:
 
