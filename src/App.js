@@ -1,11 +1,12 @@
 import Form from "./Form";
+import Clock from "./Form/Clock/clock";
 
 function App({ result, calculateResult }) {
   return (
-    <Form 
-        result={result} 
-        calculateResult={calculateResult} 
-    />
+    <>
+      <Clock />
+      <Form result={result} calculateResult={calculateResult} />
+    </>
   );
 }
 
