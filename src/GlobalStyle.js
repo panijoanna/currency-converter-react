@@ -1,5 +1,5 @@
 import { createGlobalStyle } from "styled-components";
-import background from "./background.png";
+import background from "./bg.png";
 
 export const GlobalStyle = createGlobalStyle`
   html {
@@ -13,7 +13,7 @@ export const GlobalStyle = createGlobalStyle`
   }
   
   body {
-    font-family: "Montserrat", sans-serif;
+    font-family: 'Hanken Grotesk', sans-serif;
     font-weight: 300;
     line-height: 1.5;
     font-size: 16px;
