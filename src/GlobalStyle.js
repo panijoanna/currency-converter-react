@@ -1,5 +1,5 @@
 import { createGlobalStyle } from "styled-components";
-import background from "./bg.png";
+import background from "./background.png";
 
 export const GlobalStyle = createGlobalStyle`
   html {
@@ -17,12 +17,11 @@ export const GlobalStyle = createGlobalStyle`
     font-weight: 300;
     line-height: 1.5;
     font-size: 16px;
-    margin: 0px auto;
+    margin: auto;
     background-image: url("${background}");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    height: 100%;
   }
 `;
