@@ -1,16 +1,15 @@
 export const theme = {
-    color: {
-        chalk: "#f6ebff",
-        catskill: "#f1f8f8",
-        gray: "#808080",
-        abbey: "#4b4b4d",
-        peach: "#faf5f5",
-        red: "#F14C4C",
-        yellow: "#FBEFB3",
-        copper: "#B38031",
-        casablanca: "#FCBA4C",
-    },
-    breakpoint: {
-        mobileDevice: 767,
-    },
+  color: {
+    copper: "#B38031",
+    white: "#FFFFFF",
+    black: "#000000",
+    dodgerBlue: "#5472fe",
+    aliceBlue: "#f6fcff",
+    comet: "#4f596b",
+    manatee: "#9a9da1",
+    athensGray: "#eef0f4",
+  },
+  breakpoint: {
+    mobileDevice: 767,
+  },
 };

@@ -34,17 +34,11 @@ const Form = () => {
   };
 
   return (
-    <StyledForm 
-      onSubmit={onFormSubmit}>
+    <StyledForm onSubmit={onFormSubmit}>
       <FormFieldset>
-        <Clock />
-        <FormLegend>
-          Kalkulator walut
-        </FormLegend>
+        <FormLegend>Kalkulator walut</FormLegend>
         {ratesData.state === "loading" ? (
-          <Loading>
-            Trwa ładowanie, proszę czekać...
-          </Loading>
+          <Loading>Trwa ładowanie, proszę czekać...</Loading>
         ) : ratesData.state === "error" ? (
           <StyledContainer>
             <Error>
@@ -71,38 +65,27 @@ const Form = () => {
             </p>
             <p>
               <label>
-                <LabelText>
-                  Wynik:
-                </LabelText>
-                <Input 
-                  readOnly 
-                  value={result} />
+                <LabelText>Wynik:</LabelText>
+                <Input readOnly value={result} />
               </label>
             </p>
-            <Paragraph>
-              * - pole obowiązkowe
-            </Paragraph>
             <label>
+              <LabelText>Kurs walut:</LabelText>
               <Select
                 value={currency}
                 onChange={({ target }) => setCurrency(target.value)}
               >
                 {Object.keys(ratesData.rates).map((currency) => (
-                  <option 
-                    key={currency} 
-                    value={currency}>
+                  <option key={currency} value={currency}>
                     {currency}
                   </option>
                 ))}
                 ;
               </Select>
             </label>
-            <FormButton>
-              Przelicz walutę
-            </FormButton>
-            <Info>
-              Kursy walut są aktualne na dzień {ratesData.date}
-            </Info>
+            <Paragraph>* - pole obowiązkowe</Paragraph>
+            <FormButton>Przelicz walutę</FormButton>
+            <Info>Kursy walut są aktualne na dzień {ratesData.date}</Info>
           </>
         )}
       </FormFieldset>
