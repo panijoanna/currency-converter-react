@@ -11,7 +11,8 @@ import {
 import { useState } from "react";
 import { currencies } from "../currencies/currencies";
 import { useRates } from "./useRates.js";
-import { Error, Loading, StyledContainer, Info } from "./styled";
+import { Error, StyledContainer, Info } from "./styled";
+import Loading from "../features/Loading";
 
 const Form = () => {
   const onFormSubmit = (event) => {
@@ -37,7 +38,7 @@ const Form = () => {
       <FormFieldset>
         <FormLegend>Kalkulator walut</FormLegend>
         {ratesData.state === "loading" ? (
-          <Loading>Trwa ładowanie, proszę czekać...</Loading>
+          <Loading />
         ) : ratesData.state === "error" ? (
           <StyledContainer>
             <Error>
