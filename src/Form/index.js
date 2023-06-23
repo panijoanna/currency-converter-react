@@ -9,7 +9,6 @@ import {
   Select,
 } from "./styled";
 import { useState } from "react";
-import Clock from "./Clock/clock.js";
 import { currencies } from "../currencies/currencies";
 import { useRates } from "./useRates.js";
 import { Error, Loading, StyledContainer, Info } from "./styled";
