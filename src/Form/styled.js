@@ -51,7 +51,7 @@ export const FormButton = styled.button`
 export const LabelText = styled.span`
   width: 100%;
   font-weight: 400;
-  max-width: 100px;
+  max-width: 200px;
   display: inline-block;
   margin-right: 5px;
   color: ${({ theme }) => theme.color.comet};

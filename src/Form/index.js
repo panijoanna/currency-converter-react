@@ -49,7 +49,7 @@ const Form = () => {
           <>
             <p>
               <label>
-                <LabelText>Kwota:</LabelText>
+                <LabelText>Kwota w wybranej walucie:</LabelText>
                 <Input
                   required
                   type="number"
