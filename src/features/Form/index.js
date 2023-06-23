@@ -9,10 +9,10 @@ import {
   Select,
 } from "./styled";
 import { useState } from "react";
-import { currencies } from "../currencies/currencies";
+import { currencies } from "../../currencies/currencies";
 import { useRates } from "./useRates.js";
 import { Error, StyledContainer, Info } from "./styled";
-import Loading from "../features/Loading";
+import Loading from "../Loading";
 
 const Form = () => {
   const onFormSubmit = (event) => {
@@ -50,7 +50,7 @@ const Form = () => {
           <>
             <p>
               <label>
-                <LabelText>Kwota w wybranej walucie:</LabelText>
+                <LabelText>Kwota w wybranej walucie*:</LabelText>
                 <Input
                   required
                   type="number"
@@ -65,7 +65,7 @@ const Form = () => {
             </p>
             <p>
               <label>
-                <LabelText>Wynik w zł*:</LabelText>
+                <LabelText>Wynik w zł:</LabelText>
                 <Input readOnly value={result} />
               </label>
             </p>
