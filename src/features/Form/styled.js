@@ -83,12 +83,6 @@ export const Select = styled.select`
   color: ${({ theme }) => theme.color.manatee};
 `;
 
-export const Loading = styled.p`
-  font-size: 18px;
-  font-weight: 500;
-  color: ${({ theme }) => theme.color.comet};
-`;
-
 export const Error = styled.p`
   font-size: 18px;
   font-weight: 500;

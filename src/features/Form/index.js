@@ -9,9 +9,10 @@ import {
   Select,
 } from "./styled";
 import { useState } from "react";
-import { currencies } from "../currencies/currencies";
+import { currencies } from "../../currencies/currencies";
 import { useRates } from "./useRates.js";
-import { Error, Loading, StyledContainer, Info } from "./styled";
+import { Error, StyledContainer, Info } from "./styled";
+import Loading from "../Loading";
 
 const Form = () => {
   const onFormSubmit = (event) => {
@@ -37,7 +38,7 @@ const Form = () => {
       <FormFieldset>
         <FormLegend>Kalkulator walut</FormLegend>
         {ratesData.state === "loading" ? (
-          <Loading>Trwa ładowanie, proszę czekać...</Loading>
+          <Loading />
         ) : ratesData.state === "error" ? (
           <StyledContainer>
             <Error>
@@ -49,7 +50,7 @@ const Form = () => {
           <>
             <p>
               <label>
-                <LabelText>Kwota w wybranej walucie:</LabelText>
+                <LabelText>Kwota w wybranej walucie*:</LabelText>
                 <Input
                   required
                   type="number"
