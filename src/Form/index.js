@@ -50,7 +50,7 @@ const Form = () => {
           <>
             <p>
               <label>
-                <LabelText>Kwota w zł*:</LabelText>
+                <LabelText>Kwota:</LabelText>
                 <Input
                   required
                   type="number"
@@ -65,7 +65,7 @@ const Form = () => {
             </p>
             <p>
               <label>
-                <LabelText>Wynik:</LabelText>
+                <LabelText>Wynik w zł*:</LabelText>
                 <Input readOnly value={result} />
               </label>
             </p>
