@@ -11,11 +11,12 @@ import {
 import { useState } from "react";
 import { currencies } from "../../currencies/currencies";
 import { useRates } from "./useRates.js";
-import { Error, StyledContainer, Info } from "./styled";
+import { Info } from "./styled";
 import Loading from "../Loading";
+import Error from "../Error";
 
 const Form = () => {
-  const onFormSubmit = (event) => {
+  const onFormSubmit = event => {
     event.preventDefault();
     calculateResult(currency, amount);
   };
@@ -40,12 +41,7 @@ const Form = () => {
         {ratesData.state === "loading" ? (
           <Loading />
         ) : ratesData.state === "error" ? (
-          <StyledContainer>
-            <Error>
-              Wystąpił błąd, sprawdź połączenie z internetem lub spróbuj
-              ponownie.
-            </Error>
-          </StyledContainer>
+          <Error />
         ) : (
           <>
             <p>
@@ -75,7 +71,7 @@ const Form = () => {
                 value={currency}
                 onChange={({ target }) => setCurrency(target.value)}
               >
-                {Object.keys(ratesData.rates).map((currency) => (
+                {Object.keys(ratesData.rates).map(currency => (
                   <option key={currency} value={currency}>
                     {currency}
                   </option>

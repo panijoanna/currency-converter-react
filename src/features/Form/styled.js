@@ -90,15 +90,6 @@ export const Error = styled.p`
   color: ${({ theme }) => theme.color.comet};
 `;
 
-export const StyledContainer = styled.div`
-  width: 100%;
-  padding: 5px;
-  background-color: ${({ theme }) => theme.color.comet};
-  border: solid;
-  border-color: ${({ theme }) => theme.color.comet};
-  opacity: 0.8;
-`;
-
 export const Info = styled.p`
   color: ${({ theme }) => theme.color.comet};
   font-size: 15px;
