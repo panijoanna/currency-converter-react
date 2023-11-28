@@ -1,5 +1,5 @@
 import Form from "../features/Form";
-import Clock from "../features/Clock/clock.js";
+import Clock from "../features/Clock/clock.tsx";
 
 function App({ result, calculateResult }) {
   return (
