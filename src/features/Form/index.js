@@ -13,7 +13,7 @@ import { currencies } from "../../currencies/currencies";
 import { useRates } from "./useRates.js";
 import { Info } from "./styled";
 import Loading from "../Loading";
-import Error from "../Error";
+import Error from "../Error/index.tsx";
 
 const Form = () => {
   const onFormSubmit = event => {
