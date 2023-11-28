@@ -1,4 +1,4 @@
-import Form from "../features/Form";
+import Form from "../features/Form/index.tsx";
 import Clock from "../features/Clock/clock.tsx";
 
 function App({ result, calculateResult }) {
