@@ -7,7 +7,7 @@ import {
   Input,
   Paragraph,
   Select,
-} from "./styled";
+} from "./styled.ts";
 import { useState } from "react";
 import { currencies } from "../../currencies/currencies.ts";
 import { useRates } from "./useRates.ts";
