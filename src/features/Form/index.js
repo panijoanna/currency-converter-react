@@ -9,7 +9,7 @@ import {
   Select,
 } from "./styled";
 import { useState } from "react";
-import { currencies } from "../../currencies/currencies";
+import { currencies } from "../../currencies/currencies.ts";
 import { useRates } from "./useRates.js";
 import { Info } from "./styled";
 import Loading from "../Loading";
