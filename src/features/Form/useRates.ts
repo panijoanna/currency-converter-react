@@ -1,7 +1,23 @@
 import { useEffect, useState } from "react";
 
+type Success = {
+  state: "success";
+  rates: Record<string, number>;
+  date: string;
+};
+
+type Fail = {
+  state: "error";
+};
+
+type Loading = {
+  state: "loading";
+};
+
+type Result = Success | Fail | Loading;
+
 export const useRates = () => {
-  const [ratesData, setRatesData] = useState({
+  const [ratesData, setRatesData] = useState<Result>({
     state: "loading",
   });
 

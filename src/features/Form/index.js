@@ -10,7 +10,7 @@ import {
 } from "./styled";
 import { useState } from "react";
 import { currencies } from "../../currencies/currencies.ts";
-import { useRates } from "./useRates.js";
+import { useRates } from "./useRates.ts";
 import { Info } from "./styled";
 import Loading from "../Loading";
 import Error from "../Error/index.tsx";
