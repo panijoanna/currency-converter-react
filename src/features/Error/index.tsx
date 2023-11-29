@@ -1,4 +1,4 @@
-import { ErrorContainer, Icon, StyledParagraph } from "./styled.ts";
+import { ErrorContainer, Icon, StyledParagraph } from "./styled";
 
 const Error = () => {
   return (

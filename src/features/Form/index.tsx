@@ -8,12 +8,12 @@ import {
   Paragraph,
   Select,
   Info,
-} from "./styled.ts";
+} from "./styled";
 import { useState, FormEventHandler } from "react";
-import { currencies } from "../../currencies/currencies.ts";
-import { useRates } from "./useRates.ts";
-import Loading from "../Loading/index.js";
-import Error from "../Error/index.tsx";
+import { currencies } from "../../currencies/currencies";
+import { useRates } from "./useRates";
+import Loading from "../Loading/index";
+import Error from "../Error/index";
 
 const Form = () => {
   const onFormSubmit: FormEventHandler = event => {
