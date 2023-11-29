@@ -1,7 +1,7 @@
 import { StyledClock } from "./styled";
 import { useCurrentDate } from "./useCurrentDate";
 
-const formattedDate = (date) =>
+const formattedDate = (date: Date) =>
   date.toLocaleTimeString(undefined, {
     weekday: "long",
     day: "numeric",

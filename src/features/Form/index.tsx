@@ -7,16 +7,16 @@ import {
   Input,
   Paragraph,
   Select,
+  Info,
 } from "./styled";
-import { useState } from "react";
+import { useState, FormEventHandler } from "react";
 import { currencies } from "../../currencies/currencies";
-import { useRates } from "./useRates.js";
-import { Info } from "./styled";
-import Loading from "../Loading";
-import Error from "../Error";
+import { useRates } from "./useRates";
+import Loading from "../Loading/index";
+import Error from "../Error/index";
 
 const Form = () => {
-  const onFormSubmit = event => {
+  const onFormSubmit: FormEventHandler = event => {
     event.preventDefault();
     calculateResult(currency, amount);
   };
@@ -26,11 +26,14 @@ const Form = () => {
 
   const ratesData = useRates();
 
-  const [result, setResult] = useState(0);
+  const [result, setResult] = useState("0");
 
-  const calculateResult = (currency, amount) => {
+  const calculateResult = (currency: string, amount: string) => {
+    if (ratesData.state !== "success") {
+      return;
+    }
+
     const rate = ratesData.rates[currency];
-
     setResult((+amount / rate).toFixed(2));
   };
 
