@@ -14,6 +14,7 @@ import { currencies } from "../../currencies/currencies";
 import { useRates } from "./useRates";
 import Loading from "../Loading/index";
 import Error from "../Error/index";
+import { ChangeEvent } from "react";
 
 const Form = () => {
   const onFormSubmit: FormEventHandler = event => {
@@ -34,7 +35,7 @@ const Form = () => {
     }
 
     const rate = ratesData.rates[currency];
-    setResult((+amount / rate).toFixed(2));
+    setResult((+amount * rate).toFixed(2));
   };
 
   return (
@@ -58,13 +59,15 @@ const Form = () => {
                   min="1"
                   max="1000000000"
                   value={amount}
-                  onChange={({ target }) => setAmount(target.value)}
+                  onChange={(event: ChangeEvent<HTMLInputElement>) =>
+                    setAmount(event.target.value)
+                  }
                 />
               </label>
             </p>
             <p>
               <label>
-                <LabelText>Wynik w zł*:</LabelText>
+                <LabelText>Wynik w zł:</LabelText>
                 <Input readOnly value={result} />
               </label>
             </p>
@@ -72,7 +75,9 @@ const Form = () => {
               <LabelText>Kurs walut:</LabelText>
               <Select
                 value={currency}
-                onChange={({ target }) => setCurrency(target.value)}
+                onChange={(event: ChangeEvent<HTMLSelectElement>) =>
+                  setCurrency(event.target.value)
+                }
               >
                 {ratesData &&
                   ratesData.rates &&
