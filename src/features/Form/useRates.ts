@@ -32,7 +32,7 @@ export const useRates = () => {
               GBP: 0.72007,
               JPY: 107.346001,
             },
-            date: "2021-03-17",
+            date: new Date().toISOString().slice(0, 10),
           });
         } else {
           const response = await fetch(
