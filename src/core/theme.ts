@@ -14,3 +14,7 @@ export const theme = {
     mobileDevice: 767,
   },
 };
+
+export type Theme = {
+  theme: typeof theme;
+};
