@@ -38,9 +38,11 @@ export const FormButton = styled.button`
   margin-top: 10px;
   width: 100%;
   box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
+  cursor: pointer;
 
   &:hover {
     filter: brightness(110%);
+    transition: 0.5s ease;
   }
 
   &:active {
