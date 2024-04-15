@@ -28,9 +28,9 @@ export const useRates = () => {
           setRatesData({
             state: "success",
             rates: {
-              EUR: 0.813399,
-              GBP: 0.72007,
-              JPY: 107.346001,
+              EUR: 4.31,
+              GBP: 5.04,
+              JPY: 0.026,
             },
             date: new Date().toISOString().slice(0, 10),
           });
